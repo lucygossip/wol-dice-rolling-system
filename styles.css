@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0;
+}
+:root {
+  --bg-main: #b7b9bc;
+  --bg-dark: #1a1a2a;
+  --font-color-accent: #08c;
+  --font-color-dark: #06a;
+  --font-family-accent: "Cinzel";
+  --font-family-main: "Georgia";
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-family: var(--font-family-accent);
+  letter-spacing: 0.2rem;
+}
+h2 {
+  color: #1a1a2a;
+}
+h3 {
+  color: var(--font-color-dark);
+}
+hr {
+  border: none;
+  border-top: 1px solid var(--bg-dark);
+}
+i.fa {
+  color: var(--bg-main);
+  font-size: 1.4rem;
+}
+i.fa:hover {
+  color: var(--font-color-accent);
+}
+select {
+  background: transparent;
+  border: 2px solid var(--font-color-accent);
+  border-radius: 5px;
+  padding: 5px;
+}
+select:focus-visible {
+  outline-color: var(--bg-dark);
+  outline-style: solid;
+}
+body,
+input,
+select {
+  font-family: var(--font-family-main);
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+header,
+main {
+  padding: 1rem;
+}
+header {
+  background: var(--bg-dark);
+  color: var(--font-color-accent);
+}
+main {
+  background: var(--bg-main);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+li {
+  margin-bottom: 1rem;
+}
+#weapon-display {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+#weapon-display img {
+  background: #eee;
+  border-radius: 8px;
+  height: 200px;
+  margin: 1rem 0;
+  padding: 5px;
+  width: 200px;
+}
+.table-default {
+  border-collapse: collapse;
+  border: 1px solid var(--font-color-accent);
+  margin: 20px 0;
+}
+.table-default tr:first-child td {
+  color: var(--font-color-accent);
+  font-weight: bold;
+}
+.table-default th,
+.table-default td {
+  border: 1px solid var(--font-color-accent);
+  padding: 5px;
+}
+.table-default th {
+  text-align: right;
+  width: 100px;
+}
+.table-default td {
+  width: 30px;
+}
+.nav-icons {
+  background: var(--bg-dark);
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 5px;
+  width: fit-content;
+}
+.nav-icons ul {
+  margin: 0;
+  padding: 5px;
+}
+.nav-icons li {
+  margin: 0;
+}
