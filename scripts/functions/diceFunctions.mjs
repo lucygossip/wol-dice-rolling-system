@@ -1,4 +1,4 @@
-import { fetchRank } from "./helperFunctions.mjs";
+import { fetchRank, createTable } from "./helperFunctions.mjs";
 import { validateCertificates } from "./validationFunctions.mjs";
 
 export function createDiceRange(num, rank, cat, weap) {
@@ -54,3 +54,32 @@ export function createDiceTable(diceRange) {
   return table;
 }
 // Creates the tables to display the dice rolls and damage values
+
+export function createSuccessTable(chanceOfSuccess) {
+  let table = createTable("dice-output");
+  let fail = 8 - chanceOfSuccess;
+  let tr1 = document.createElement("tr");
+  table.appendChild(tr1);
+
+  for (let i = 1; i < 9; i++) {
+    let td = document.createElement("td");
+    td.textContent = i;
+    tr1.appendChild(td);
+  }
+  let tr2 = document.createElement("tr");
+  table.appendChild(tr2);
+
+  for (let i = 1; i <= fail; i++) {
+    let td = document.createElement("td");
+    td.textContent = "Miss";
+    td.classList.add("miss");
+    tr2.appendChild(td);
+  }
+  for (let i = fail + 1; i <= 8; i++) {
+    let td = document.createElement("td");
+    td.textContent = "Hit";
+    td.classList.add("hit");
+    tr2.appendChild(td);
+  }
+  return table;
+}

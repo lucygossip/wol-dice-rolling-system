@@ -60,6 +60,16 @@ export function appendData(label, data, loc) {
   loc.appendChild(div);
 }
 
+export function appendOption(loc, option) {
+  let op = document.createElement("option");
+  op.textContent = option;
+  loc.appendChild(op);
+}
+
+export function appendItem(item, loc) {
+  loc.append(item);
+}
+
 export function hasProperty(obj, prop, label, loc) {
   if (!obj[prop] || obj[prop] === "None") {
     return;
@@ -87,3 +97,37 @@ export function fetchRank(rank) {
   }
 }
 // Fetches the user's rank and returns the amount of extra damage applied due to that rank
+
+export function createTable(tableId) {
+  let table = document.createElement("table");
+  table.setAttribute("id", tableId);
+  return table;
+}
+
+export function getChanceOfSuccess(userRank, spellRank) {
+  let num = 7;
+  if (userRank === "Civilian") {
+    /* console.log(`User rank: ${userRank} | Chance of success: 0 / 8`); */
+    return 0;
+  }
+
+  let index = ranks.find((rank) => rank[0] === userRank);
+  let index2 = ranks.find((rank) => rank[0] === spellRank);
+
+  index = Number(index[1]);
+  index2 = Number(index2[1]);
+
+  if (index2 <= index) {
+    return num;
+  }
+
+  while (index2 > index) {
+    num--;
+    index2--;
+  }
+
+  console.log(
+    `User rank: ${userRank} | Spell rank: ${spellRank} | Chance of success: ${num} / 8`,
+  );
+  return num;
+}

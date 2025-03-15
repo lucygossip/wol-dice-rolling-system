@@ -8,6 +8,10 @@ export const diceRange = document.getElementById("dice-range");
 
 export const rankSelector = document.getElementById("rank");
 
+export const selectUserRank = document.getElementById("user-rank");
+
+export const selectSpellRank = document.getElementById("spell-rank");
+
 export const diceRangeOutput = document.getElementById("dice-range-output");
 
 export const zeroBaseDamage = [

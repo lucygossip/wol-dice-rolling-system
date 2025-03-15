@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WoL Dice Rolling System - Arcane Spells</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>World of Legends - Dice Rolling System</h1>
+      </header>
+      <main>
+        <hr />
+        <nav class="nav-icons">
+          <ul>
+            <li>
+              <a title="General" href="../index.html">General</a>
+            </li>
+            <li>
+              <a title="Weapon Information" href="../pages/weapons.html"
+                ><i class="fa fa-solid fa-shield"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Spell Information" href="../pages/spells.html"
+                ><i class="fa fa-solid fa-magic"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Animal Information" href="../pages/animals.html"
+                ><i class="fa fa-bug" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Status and Divine Favour Information"
+                href="../pages/status.html"
+                ><i class="fa fa-superpowers" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <div id="info-tabs">
+          <div class="tab" id="spells-info-wrapper">
+            <h2>Arcane Spell Information</h2>
+            <section id="notes-arcane-spells">
+              <h3>Notes</h3>
+              <ul>
+                <li>
+                  The actual amount of damage a weapon will do depends on the
+                  dice roll. A higher roll will give a higher amount of damage.
+                  The ranges are: 1 = Miss | 2 = Base | 3 = Base + 1 | 4 = Base
+                  + 2 | 5 = Base + 3 | 6 = Base + 4
+                </li>
+                <li>
+                  The Last Barrage and Hot Shot deal a static amount of damage
+                  and therefore do not follow the above system.
+                </li>
+                <li>
+                  All staffs have a base damage of 0, therefore all dice rolls
+                  will output 0. Staffs instead add a buff to spells. The amount
+                  of buff will be listed under the "Buff" stat. Please use the
+                  Spell tool to find out more about spell damage.
+                </li>
+              </ul>
+            </section>
+            <section id="spells-tool">
+              <h3>Arcane Spells Tool</h3>
+              <p>
+                Select your rank and the rank of the spell to find out your
+                chance of success.
+              </p>
+              <label>User Rank: </label>
+              <select id="user-rank"></select>
+              <label>Spell Rank: </label>
+              <select id="spell-rank"></select>
+
+              <h4>Certificates</h4>
+              <div>
+                <input type="checkbox" id="arcane" />
+                <label>Arcane</label>
+              </div>
+              <div id="spell-display"></div>
+              <div id="dice-range">
+                <h3>Dice Range</h3>
+                <p>
+                  Depending on your rank and the rank of the spell, the chance
+                  of the spell's success will vary.
+                </p>
+                <div id="dice-range-output"></div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../scripts/spells/spellTool.mjs"></script>
+  </body>
+</html>
