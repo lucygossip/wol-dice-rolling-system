@@ -1,6 +1,20 @@
+export const weaponList = [];
+
+export const arcaneSpellList = [];
+
+export const arcaneHeaders = [
+  "Spell",
+  "Rank",
+  "Element",
+  "Effect",
+  "Damage"
+]
+
 export const weaponSelector = document.getElementById("weapon-selector");
 
-export const weaponList = [];
+export const arcaneSpellSelector = document.getElementById("arcane-spell-selector");
+
+export const arcaneSpellListContainer = document.getElementById("arcane-spell-list-container");
 
 export const weaponDisplay = document.getElementById("weapon-display");
 

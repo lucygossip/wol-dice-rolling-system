@@ -124,3 +124,35 @@ li {
 .nav-icons li {
   margin: 0;
 }
+
+/*Tables*/
+
+table {
+  max-width: 100%;
+}
+
+#arcane-spell-list-container table {
+  background: #ddd;
+  border: 1px solid;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+#arcane-spell-list-container table tr:first-child {
+  background: var(--bg-dark);
+}
+
+#arcane-spell-list-container table th {
+  color: var(--font-color-accent);
+}
+
+#arcane-spell-list-container table th, #arcane-spell-list-container table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+#arcane-spell-list-container table th:nth-child(4), #arcane-spell-list-container table td:nth-child(4) {
+  width: 500px;
+}

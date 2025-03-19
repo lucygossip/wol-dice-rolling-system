@@ -1,4 +1,5 @@
 import { ranks } from "../globals/ranksObject.mjs";
+import { arcane } from "../globals/globalObjects.mjs";
 
 export function openTab(tabname) {
   let tabList = document.getElementsByClassName("tab");
@@ -105,6 +106,7 @@ export function createTable(tableId) {
 }
 
 export function getChanceOfSuccess(userRank, spellRank) {
+  console.log(userRank, spellRank);
   let num = 7;
   if (userRank === "Civilian") {
     /* console.log(`User rank: ${userRank} | Chance of success: 0 / 8`); */
@@ -113,6 +115,8 @@ export function getChanceOfSuccess(userRank, spellRank) {
 
   let index = ranks.find((rank) => rank[0] === userRank);
   let index2 = ranks.find((rank) => rank[0] === spellRank);
+
+  console.log(index, index2);
 
   index = Number(index[1]);
   index2 = Number(index2[1]);
@@ -130,4 +134,27 @@ export function getChanceOfSuccess(userRank, spellRank) {
     `User rank: ${userRank} | Spell rank: ${spellRank} | Chance of success: ${num} / 8`,
   );
   return num;
+}
+
+export function sortByValue(arr, valToBeSorted) {
+  let array = [];
+
+  for (let obj of arr) {
+    for (let k in obj) {
+      if (obj[k] === valToBeSorted) {
+        array.push(obj);
+      }
+    }
+  }
+  return array;
+}
+
+export function summarize(location, summaryId, header) {
+  let details = document.createElement("details");
+  let summary = document.createElement("summary");
+  details.setAttribute("id", summaryId);
+  summary.textContent = header;
+  details.appendChild(summary);
+  location.appendChild(details);
+  return summaryId;
 }

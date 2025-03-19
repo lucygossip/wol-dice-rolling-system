@@ -15,6 +15,7 @@ import {
   rankSelector,
   diceRangeOutput,
   zeroBaseDamage,
+  arcaneSpellSelector
 } from "../globals/globalObjects.mjs";
 
 // Inits

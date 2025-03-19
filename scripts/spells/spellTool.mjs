@@ -3,6 +3,7 @@ import {
   selectSpellRank,
   selectUserRank,
   diceRangeOutput,
+  arcane,
 } from "../globals/globalObjects.mjs";
 import {
   appendOption,
@@ -28,10 +29,18 @@ diceRangeOutput.textContent = "";
 appendItem(createSuccessTable(chanceOfSuccess), diceRangeOutput);
 
 document.addEventListener("change", (e) => {
-  if (e.target.id === "user-rank") {
-    chanceOfSuccess = getChanceOfSuccess(e.target.value, selectSpellRank.value);
-  } else {
-    chanceOfSuccess = getChanceOfSuccess(selectUserRank.value, e.target.value);
+  if (
+    e.target.id === "user-rank" ||
+    e.target.id === "spell-rank" ||
+    e.target.id === "arcane"
+  ) {
+    chanceOfSuccess = getChanceOfSuccess(
+      selectUserRank.value,
+      selectSpellRank.value,
+    );
+    if (arcane.checked && selectUserRank.value !== "Civilian") {
+      chanceOfSuccess += 1;
+    }
   }
 
   console.log(`The chance of success is ${chanceOfSuccess}`);
