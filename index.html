@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WoL Dice Rolling System - General</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Cinzel"
       rel="stylesheet"
@@ -59,14 +59,159 @@
         <hr />
         <h2>General Information</h2>
         <section id="notes-general">
-          <h3>Notes</h3>
+          <h3>Rules</h3>
           <ul>
             <li>
-              The base damage is the lowest amount of damage a weapon or spell
-              can do. The base increases by 1 per every increase in your rank.
-              The base damage listed in this tool is the amount for a user at
-              Civilian rank.
+              Users must define their weapons, armour and animals before the fight. These must be defined within with the permitted weapon combinations. In order to define 'Magic', a user must be at the rank 'Wanderer' or higher.
             </li>
+            <li>Special weapons and animals MUST be in the inventory and BE SEEN, otherwise we will think they imagined it.</li>
+            <li>Users can attack once per weapon slot. A shield does not count as a weapon, however a shield can add defence against an opponent's attack.</li>
+            <li>Users start with a set amount of health. If it reaches zero, they are out of the fight but NOT dead. (unconscious/fled/rescued)</li>
+            <li>If a user ranks up during a fight, their OLD rank will be used till the end of the fight.</li>
+          </ul>
+        </section>
+        <section id="">
+          <div class="tables-grid">
+            <table>
+              <tr>
+                <th>Permitted Weapon Combinations</th>
+                <th>Permitted Attacks Per Round</th>
+              </tr>
+              <tr>
+                <td>Two-Handed</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Unarmed + Unarmed</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Unarmed + Magic</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Magic + Magic</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>One-Handed + Magic</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>One-Handed + One-Handed</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>One-Handed + Unarmed Attack</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>One-Handed + Shield</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Magic + Shield</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Unarmed + Shield</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>Rank</th>
+                <th>Health</th>
+              </tr>
+              <tr>
+                <td>Civilian</td>
+                <td>65</td>
+              </tr>
+              <tr>
+                <td>Wanderer</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>Journeyman</td>
+                <td>75</td>
+              </tr>
+              <tr>
+                <td>Ranger</td>
+                <td>80</td>
+              </tr>
+              <tr>
+                <td>Storyteller</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>Dreamweaver</td>
+                <td>90</td>
+              </tr>
+              <tr>
+                <td>Hero</td>
+                <td>95</td>
+              </tr>
+              <tr>
+                <td>Legend</td>
+                <td>100</td>
+              </tr>
+            </table>
+            <table>
+              <tr>
+                <th>Extra Allowance</th>
+                <th>Permitted Attacks Per Round</th>
+              </tr>
+              <tr>
+                <td>1 x Status Animal</td>
+                <td>1, unless a longer cooldown is specified</td>
+              </tr>
+              <tr>
+                <td>Status Ability</td>
+                <td>See status information</td>
+              </tr>
+              <tr>
+                <td>Divine Favour</td>
+                <td>See divine favour information</td>
+              </tr>
+            </table>
+            <div></div>
+            <table>
+              <tr>
+                <th>Permitted Armour</th>
+                <th>Amount</th>
+              </tr>
+              <tr>
+                <td>Armour - Head</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Armour - Body</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Armour - Legs</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Armour - Foot</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Armour - Cloak</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Armour - Hands</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </div>
+          <ul>
+            <li>One-handed = small swords, daggers, staffs, crossbows, guns, maces</li>
+            <li>Two-handed = large swords, bows, battleaxes, dual weapons, scythes</li>
+            <li>One weapon may be a status weapon</li>
+            <li>One armour piece may be a status piece</li>
+            <li>A staff does not do melee damage, but buffs spell damage. A civilian holding a staff will do 0 damage with it</li>
           </ul>
         </section>
       </main>

@@ -156,3 +156,19 @@ table {
 #arcane-spell-list-container table th:nth-child(4), #arcane-spell-list-container table td:nth-child(4) {
   width: 500px;
 }
+
+.tables-grid {
+  display: grid;
+  grid-template: auto / 2fr 1fr;
+  gap: 1rem;
+}
+.tables-grid table {
+  border: 1px solid var(--font-color-dark);
+}
+.tables-grid table th, .tables-grid table td {
+  padding: 8px;
+}
+.tables-grid table tr:first-child {
+  background: var(--bg-dark);
+  color: var(--font-color-accent);
+}
