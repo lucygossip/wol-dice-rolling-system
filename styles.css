@@ -131,7 +131,7 @@ table {
   max-width: 100%;
 }
 
-#arcane-spell-list-container table {
+table.spell-table {
   background: #ddd;
   border: 1px solid;
   border-collapse: collapse;
@@ -139,21 +139,22 @@ table {
   width: 100%;
 }
 
-#arcane-spell-list-container table tr:first-child {
+table.spell-table tr:first-child {
   background: var(--bg-dark);
 }
 
-#arcane-spell-list-container table th {
+table.spell-table th {
   color: var(--font-color-accent);
 }
 
-#arcane-spell-list-container table th, #arcane-spell-list-container table td {
+table.spell-table th, table.spell-table td {
   border: 1px solid black;
   padding: 8px;
   text-align: left;
 }
 
-#arcane-spell-list-container table th:nth-child(4), #arcane-spell-list-container table td:nth-child(4) {
+table.spell-table th:nth-child(4),
+table.spell-table td:nth-child(4) {
   width: 500px;
 }
 
@@ -165,7 +166,8 @@ table {
 .tables-grid table {
   border: 1px solid var(--font-color-dark);
 }
-.tables-grid table th, .tables-grid table td {
+.tables-grid table th,
+.tables-grid table td {
   padding: 8px;
 }
 .tables-grid table tr:first-child {

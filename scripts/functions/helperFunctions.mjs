@@ -1,14 +1,6 @@
 import { ranks } from "../globals/ranksObject.mjs";
 import { arcane } from "../globals/globalObjects.mjs";
 
-export function openTab(tabname) {
-  let tabList = document.getElementsByClassName("tab");
-  for (let i = 0; i < tabList.length; i++) {
-    tabList[i].style.display = "none";
-  }
-  document.getElementById(tabname).style.display = "block";
-}
-
 export function pushArray(arr, arr2) {
   arr.push.apply(arr, arr2);
 }

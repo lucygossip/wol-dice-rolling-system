@@ -17,9 +17,13 @@ export function createTableItem(item, loc, content) {
 
 export function createSpellTable(container, tableId, spellsArr) {
   const newTable = createTable(tableId);
+  newTable.classList.add("spell-table");
   container.appendChild(newTable);
   let tr1 = createTableItem("tr", newTable);
   for (let i = 0; i < arcaneHeaders.length; i++) {
+    if(arcaneHeaders[i] === "Damage" && !spellsArr[0].hasOwnProperty("damage")) {
+      continue;
+    }
     createTableItem("th", tr1, arcaneHeaders[i]);
   }
 

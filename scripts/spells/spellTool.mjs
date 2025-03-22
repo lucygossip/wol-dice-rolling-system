@@ -41,9 +41,9 @@ document.addEventListener("change", (e) => {
     if (arcane.checked && selectUserRank.value !== "Civilian") {
       chanceOfSuccess += 1;
     }
+    console.log(`The chance of success is ${chanceOfSuccess}`);
   }
-
-  console.log(`The chance of success is ${chanceOfSuccess}`);
+  
 
   diceRangeOutput.textContent = "";
   appendItem(createSuccessTable(chanceOfSuccess), diceRangeOutput);

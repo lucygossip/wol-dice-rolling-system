@@ -51,6 +51,19 @@
           </ul>
         </nav>
         <hr />
+        <nav class="nav-spell-pages">
+          <ul>
+            <li>
+              <a href="#spells-info-wrapper" onclick="openTab('spells-info-wrapper', 'tab')">Arcane Spells</a>
+            </li>
+            <li>
+              <a href="#divine-spells-info-wrapper" onclick="openTab('divine-spells-info-wrapper', 'tab')">Divine Spells</a>
+            </li>
+            <li>
+              <a href="#dark-spells-info-wrapper" onclick="openTab('dark-spells-info-wrapper', 'tab')">Dark Spells</a>
+            </li>
+          </ul>
+        </nav>
         <div id="info-tabs">
           <div class="tab" id="spells-info-wrapper">
             <h2>Arcane Spell Information</h2>
@@ -96,10 +109,38 @@
               </div>
             </section>
           </div>
+          <div class="tab" id="dark-spells-info-wrapper" style="display: none">
+              <h2>Dark Spell Information</h2>
+              <section id="notes-dark-spells">
+                <h3>Notes</h3>
+                <ul>
+                  <li>
+                  </li>
+                  <li>
+                  </li>
+                  <li>
+                  </li>
+                </ul>
+              </section>
+              <section id="dark-spell-list-container">
+                
+              </section>
+              <section id="dark-spells-tool">
+                <h3>Dark Spells Tool</h3>
+              <p>
+                Select a dark spell to find out what it does.
+              </p>
+              <select id="dark-spell-selector"></select>
+              <div id="dark-spell-display"></div>
+              </section>
+          </div>
         </div>
       </main>
     </div>
     <script type="module" src="../scripts/spells/spellTool.mjs"></script>
     <script type="module" src="../scripts/spells/arcaneSpellTable.mjs"></script>
+    <script type="module" src="../scripts/spells/darkSpellTool.mjs"></script>
+    <script type="module" src="../scripts/spells/darkSpellTable.mjs"></script>
+    <script type="text/javascript" src="../scripts/functions/openTabFunction.js"></script>
   </body>
 </html>

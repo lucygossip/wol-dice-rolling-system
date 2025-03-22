@@ -16,6 +16,8 @@ export const arcaneSpellSelector = document.getElementById("arcane-spell-selecto
 
 export const arcaneSpellListContainer = document.getElementById("arcane-spell-list-container");
 
+export const darkSpellListContainer = document.getElementById("dark-spell-list-container");
+
 export const weaponDisplay = document.getElementById("weapon-display");
 
 export const diceRange = document.getElementById("dice-range");
