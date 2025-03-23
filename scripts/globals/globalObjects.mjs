@@ -13,6 +13,7 @@ export const arcaneHeaders = [
 export const divineHeaders = [
   "Name",
   "Rank",
+  "Deity",
   "Effect",
   "With Divine Certificate"
 ]
