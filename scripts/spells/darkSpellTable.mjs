@@ -1,4 +1,4 @@
-import { darkSpellListContainer } from "../globals/globalObjects.mjs";
+import { arcaneHeaders, darkSpellListContainer } from "../globals/globalObjects.mjs";
 import darkSpells from "./darkSpellObjects.mjs";
 import { createSpellTable } from "../functions/tableFunctions.mjs";
 import { summarize } from "../functions/helperFunctions.mjs";
@@ -13,4 +13,5 @@ createSpellTable(
   document.getElementById(summaryDark),
   "divine-spells-table-dark",
   darkSpells,
+  arcaneHeaders
 );

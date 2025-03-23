@@ -10,11 +10,20 @@ export const arcaneHeaders = [
   "Damage"
 ]
 
+export const divineHeaders = [
+  "Name",
+  "Rank",
+  "Effect",
+  "With Divine Certificate"
+]
+
 export const weaponSelector = document.getElementById("weapon-selector");
 
 export const arcaneSpellSelector = document.getElementById("arcane-spell-selector");
 
 export const arcaneSpellListContainer = document.getElementById("arcane-spell-list-container");
+
+export const divineSpellListContainer = document.getElementById("divine-spell-list-container");
 
 export const darkSpellListContainer = document.getElementById("dark-spell-list-container");
 

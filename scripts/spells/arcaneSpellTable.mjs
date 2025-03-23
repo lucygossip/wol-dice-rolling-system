@@ -1,4 +1,5 @@
 import {
+  arcaneHeaders,
   arcaneSpellList,
   arcaneSpellListContainer,
 } from "../globals/globalObjects.mjs";
@@ -82,54 +83,65 @@ createSpellTable(
   document.getElementById(summaryGeneral),
   "arcane-spells-table-general",
   generalSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryFire),
   "arcane-spells-table-fire",
   fireSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryWater),
   "arcane-spells-table-water",
   waterSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryEarth),
   "arcane-spells-table-earth",
   earthSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryAir),
   "arcane-spells-table-air",
   airSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryLightning),
   "arcane-spells-table-lightning",
   lightningSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryCrystal),
   "arcane-spells-table-crystal",
   crystalSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryMagma),
   "arcane-spells-table-magma",
   magmaSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryLight),
   "arcane-spells-table-light",
   lightSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summaryIce),
   "arcane-spells-table-ice",
   iceSpells,
+  arcaneHeaders
 );
 createSpellTable(
   document.getElementById(summarySand),
   "arcane-spells-table-sand",
   sandSpells,
+  arcaneHeaders
 );

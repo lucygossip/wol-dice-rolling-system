@@ -15,16 +15,17 @@ export function createTableItem(item, loc, content) {
   return elem;
 }
 
-export function createSpellTable(container, tableId, spellsArr) {
+export function createSpellTable(container, tableId, spellsArr, headers) {
   const newTable = createTable(tableId);
   newTable.classList.add("spell-table");
   container.appendChild(newTable);
   let tr1 = createTableItem("tr", newTable);
-  for (let i = 0; i < arcaneHeaders.length; i++) {
-    if(arcaneHeaders[i] === "Damage" && !spellsArr[0].hasOwnProperty("damage")) {
+
+  for (let i = 0; i < headers.length; i++) {
+    if(headers[i] === "Damage" && !spellsArr[0].hasOwnProperty("damage")) {
       continue;
     }
-    createTableItem("th", tr1, arcaneHeaders[i]);
+    createTableItem("th", tr1, headers[i]);
   }
 
   for (let i = 0; i < spellsArr.length; i++) {
