@@ -348,11 +348,11 @@ const arcaneSpells = [
   new ArcaneSpell("Dune Shift", 7, "Sand", "Creates an obstructive wall of sand, smothering the target"),
   new ArcaneSpell("Disintegrate", 8, "Sand", "A powerful spell to turn the target into sand"),
   new ArcaneSpell("Basic Light", 2, "Light", "Creates an orb of light to improve visibility"),
-  new ArcaneSpell("Lightforce", 2, "Light", "Blasts a light beam at a target"),
-  new ArcaneSpell("Radiance", 2, "Light", "Produces a light that envelopes the caster and harms nearby enemies"),
-  new ArcaneSpell("Aura of Solis", 2, "Light", "Generates a bright sunlight that only harms undead"),
-  new ArcaneSpell("Arrow of Helios", 2, "Light", "Generates a bright sunlight arrow to project at a target"),
-  new ArcaneSpell("Moonbeam", 2, "Light", "Creates a concentrated form of moonlight to harm a target"),
+  new ArcaneSpell("Lightforce", 4, "Light", "Blasts a light beam at a target"),
+  new ArcaneSpell("Radiance", 5, "Light", "Produces a light that envelopes the caster and harms nearby enemies"),
+  new ArcaneSpell("Aura of Solis", 6, "Light", "Generates a bright sunlight that only harms undead"),
+  new ArcaneSpell("Arrow of Helios", 6, "Light", "Generates a bright sunlight arrow to project at a target"),
+  new ArcaneSpell("Moonbeam", 8, "Light", "Creates a concentrated form of moonlight to harm a target"),
 ];
 
 let damage = 14;
