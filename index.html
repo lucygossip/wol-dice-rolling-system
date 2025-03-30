@@ -24,26 +24,22 @@
         <nav class="nav-icons">
           <ul>
             <li>
-              <a title="General" aria-selected="true" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+              <a title="General" aria-selected="true" href="index.html"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></a>
             </li>
             <li>
-              <a
-                title="Weapon Information"
-                href="./pages/weapons.html"
+              <a title="Weapon Information" href="./pages/weapons.html"
                 ><i class="fa fa-solid fa-shield"></i
               ></a>
             </li>
             <li>
-              <a
-                title="Spell Information"
-                href="./pages/spells.html"
+              <a title="Spell Information" href="./pages/spells.html"
                 ><i class="fa fa-solid fa-magic"></i
               ></a>
             </li>
             <li>
-              <a
-                title="Animal Information"
-                href="./pages/animals.html"
+              <a title="Animal Information" href="./pages/animals.html"
                 ><i class="fa fa-bug" aria-hidden="true"></i
               ></a>
             </li>
@@ -62,17 +58,33 @@
           <h3>Rules</h3>
           <ul>
             <li>
-              Users must define their weapons, armour and animals before the fight. These must be defined within with the permitted weapon combinations. In order to define 'Magic', a user must be at the rank 'Wanderer' or higher.
+              Users must define their weapons, armour and animals before the
+              fight. These must be defined within with the permitted weapon
+              combinations. In order to define 'Magic', a user must be at the
+              rank 'Wanderer' or higher.
             </li>
-            <li>Special weapons and animals MUST be in the inventory and BE SEEN, otherwise we will think they imagined it.</li>
-            <li>Users can attack once per weapon slot. A shield does not count as a weapon, however a shield can add defence against an opponent's attack.</li>
-            <li>Users start with a set amount of health. If it reaches zero, they are out of the fight but NOT dead. (unconscious/fled/rescued)</li>
-            <li>If a user ranks up during a fight, their OLD rank will be used till the end of the fight.</li>
+            <li>
+              Special weapons and animals MUST be in the inventory and BE SEEN,
+              otherwise we will think they imagined it.
+            </li>
+            <li>
+              Users can attack once per weapon slot. A shield does not count as
+              a weapon, however a shield can add defence against an opponent's
+              attack.
+            </li>
+            <li>
+              Users start with a set amount of health. If it reaches zero, they
+              are out of the fight but NOT dead. (unconscious/fled/rescued)
+            </li>
+            <li>
+              If a user ranks up during a fight, their OLD rank will be used
+              till the end of the fight.
+            </li>
           </ul>
         </section>
-        <section id="">
+        <section id="tables-general">
           <div class="tables-grid">
-            <table>
+            <table class="table-default-style" id="table-weap">
               <tr>
                 <th>Permitted Weapon Combinations</th>
                 <th>Permitted Attacks Per Round</th>
@@ -118,7 +130,7 @@
                 <td>1</td>
               </tr>
             </table>
-            <table>
+            <table class="table-default-style" id="table-rank">
               <tr>
                 <th>Rank</th>
                 <th>Health</th>
@@ -156,7 +168,7 @@
                 <td>100</td>
               </tr>
             </table>
-            <table>
+            <table class="table-default-style" id="table-extra">
               <tr>
                 <th>Extra Allowance</th>
                 <th>Permitted Attacks Per Round</th>
@@ -174,8 +186,7 @@
                 <td>See divine favour information</td>
               </tr>
             </table>
-            <div></div>
-            <table>
+            <table class="table-default-style" id="table-armour">
               <tr>
                 <th>Permitted Armour</th>
                 <th>Amount</th>
@@ -207,11 +218,18 @@
             </table>
           </div>
           <ul>
-            <li>One-handed = small swords, daggers, staffs, crossbows, guns, maces</li>
-            <li>Two-handed = large swords, bows, battleaxes, dual weapons, scythes</li>
+            <li>
+              One-handed = small swords, daggers, staffs, crossbows, guns, maces
+            </li>
+            <li>
+              Two-handed = large swords, bows, battleaxes, dual weapons, scythes
+            </li>
             <li>One weapon may be a status weapon</li>
             <li>One armour piece may be a status piece</li>
-            <li>A staff does not do melee damage, but buffs spell damage. A civilian holding a staff will do 0 damage with it</li>
+            <li>
+              A staff does not do melee damage, but buffs spell damage. A
+              civilian holding a staff will do 0 damage with it
+            </li>
           </ul>
         </section>
       </main>

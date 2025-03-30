@@ -20,6 +20,8 @@ h1 {
 }
 h2 {
   color: #1a1a2a;
+  margin: 3rem 0;
+  text-align: center;
 }
 h3 {
   color: var(--font-color-dark);
@@ -82,6 +84,11 @@ nav ul {
 .nav-icons a[aria-selected="true"] {
   background: var(--font-color-accent);
 }
+
+.nav-icons a[aria-selected="true"] i.fa:hover {
+  color: #fff;
+}
+
 li {
   margin-bottom: 1rem;
 }
@@ -141,51 +148,64 @@ table {
   max-width: 100%;
 }
 
-table.spell-table {
+table.table-default-style {
   background: #ddd;
-  border: 1px solid;
+  border: 1px solid var(--font-color-dark);
   border-collapse: collapse;
-  margin: 2rem 0;
-  width: 100%;
 }
 
-table.spell-table tr:first-child {
+table.table-default-style th,
+table.table-default-style td {
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+table.table-default-style tr:first-child {
   background: var(--bg-dark);
-}
-
-table.spell-table th {
   color: var(--font-color-accent);
 }
 
 table.spell-table th, table.spell-table td {
-  border: 1px solid black;
-  padding: 8px;
   text-align: left;
-}
-
-table.spell-table th:nth-child(4),
-table.spell-table td:nth-child(4) {
-  width: 500px;
-}
-
-table.divine-spells th:nth-child(4),
-table.divine-spells td:nth-child(4) {
-  width: auto;
 }
 
 .tables-grid {
   display: grid;
-  grid-template: auto / 2fr 1fr;
-  gap: 1rem;
+  /* grid-template: auto / 2fr 1fr; */
+  grid-template-areas:
+  "weap weap rank"
+  "extra extra ."
+  "armour . .";
+  gap: 2rem 1rem;
 }
-.tables-grid table {
-  border: 1px solid var(--font-color-dark);
+
+#table-weap {
+  grid-area: weap;
 }
-.tables-grid table th,
-.tables-grid table td {
-  padding: 8px;
+
+#table-rank {
+  grid-area: rank;
 }
-.tables-grid table tr:first-child {
-  background: var(--bg-dark);
-  color: var(--font-color-accent);
+
+#table-extra {
+  grid-area: extra;
+}
+
+#table-armour {
+  grid-area: armour;
+}
+
+details {
+  margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 650px) {
+  .tables-grid {
+    display: block;
+  }
+  .tables-grid table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }

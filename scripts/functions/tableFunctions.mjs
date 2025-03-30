@@ -17,7 +17,7 @@ export function createTableItem(item, loc, content) {
 
 export function createSpellTable(container, tableId, spellsArr, headers) {
   const newTable = createTable(tableId);
-  newTable.classList.add("spell-table");
+  newTable.classList.add("table-default-style", "spell-table");
   container.appendChild(newTable);
   let tr1 = createTableItem("tr", newTable);
 
