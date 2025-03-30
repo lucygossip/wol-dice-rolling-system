@@ -38,9 +38,11 @@ document.addEventListener("change", (e) => {
       selectUserRank.value,
       selectSpellRank.value,
     );
+    /*
     if (arcane.checked && selectUserRank.value !== "Civilian") {
       chanceOfSuccess += 1;
     }
+      */
     console.log(`The chance of success is ${chanceOfSuccess}`);
   }
   

@@ -55,7 +55,7 @@
         <nav class="nav-spell-pages">
           <ul>
             <li>
-              <a href="#spells-info-wrapper" onclick="openTab('spells-info-wrapper', 'tab')">Arcane Spells</a>
+              <a href="#arcane-spells-info-wrapper" onclick="openTab('arcane-spells-info-wrapper', 'tab')">Arcane Spells</a>
             </li>
             <li>
               <a href="#divine-spells-info-wrapper" onclick="openTab('divine-spells-info-wrapper', 'tab')">Divine Spells</a>
@@ -66,7 +66,7 @@
           </ul>
         </nav>
         <div id="info-tabs">
-          <div class="tab" id="spells-info-wrapper">
+          <div class="tab" id="arcane-spells-info-wrapper">
             <section id="notes-arcane-spells">
               <h3>Arcane Spells</h3>
               <ul>
@@ -80,6 +80,8 @@
             </section>
             <section id="spells-tool">
               <h3>Arcane Spells Tool</h3>
+              <div id="arcane-spell-selectors">
+              <h4>Selectors</h4>
               <p>
                 Select your rank and the rank of the spell to find out your
                 chance of success.
@@ -88,25 +90,26 @@
               <select id="user-rank"></select>
               <label>Spell Rank: </label>
               <select id="spell-rank"></select>
-
+            </div>
+              <!--
               <h4>Certificates</h4>
               <div>
                 <input type="checkbox" id="arcane" />
                 <label>Arcane</label>
               </div>
-              <div id="spell-display"></div>
+              -->  
               <div id="dice-range">
-                <h3>Dice Range</h3>
+                <h4>Dice Range</h4>
                 <p>
                   Depending on your rank and the rank of the spell, the chance
                   of the spell's success will vary.
                 </p>
                 <div id="dice-range-output"></div>
               </div>
-              <div>
-                <h3>Arcane Spell List</h3>
-                <div id="arcane-spell-list-container"></div>
-              </div>
+            </section>
+            <section>
+              <h3>Arcane Spell List</h3>
+              <div id="arcane-spell-list-container"></div>
             </section>
           </div>
           <div class="tab" id="divine-spells-info-wrapper" style="display: none">
