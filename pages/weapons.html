@@ -1,84 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WoL Dice Rolling System - Weapons</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <div class="wrapper">
-        <header>
-          <h1>World of Legends - Dice Rolling System</h1>
-        </header>
-        <main>
-          <hr>
-          <nav class="nav-icons">
-            <ul>
-              <li>
-                <a title="General" href="../index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
-              </li>
-              <li>
-      <a title="Weapon Information" aria-selected="true" href="../pages/weapons.html" ><i class="fa fa-solid fa-shield"></i></a>
-              </li>
-              <li>
-                <a title="Spell Information" href="../pages/spells.html"><i class="fa fa-solid fa-magic"></i></a>
-              </li>
-              <li>
-                <a title="Animal Information" href="../pages/animals.html"><i class="fa fa-bug" aria-hidden="true"></i></a>
-              </li>
-              <li>
-                <a title="Status and Divine Favour Information" href="../pages/status.html"><i class="fa fa-superpowers" aria-hidden="true"></i>
-      </a>
-              </li>
-            </ul>
-          </nav>
-          <hr>          
-          <div id="info-tabs">
-            <div class="tab" id="weapon-info-wrapper">
-              <h2>Weapon Information</h2>
-              <section id="notes-weapons">
-                <h3>Notes</h3>
-                <ul>
-                  <li>The actual amount of damage a weapon will do depends on the dice roll. A higher roll will give a higher amount of damage. The ranges are: 1 = Miss | 2 = Base | 3 = Base + 1 | 4 = Base + 2 | 5 = Base + 3 | 6 = Base + 4</li>
-                  <li>The Last Barrage and Hot Shot deal a static amount of damage and therefore do not follow the above system.</li>
-                  <li>All staffs have a base damage of 0, therefore all dice rolls will output 0. Staffs instead add a buff to spells. The amount of buff will be listed under the "Buff" stat. Please use the Spell tool to find out more about spell damage.</li>
-                </ul>
-              </section>
-              <section id="weapon-tool">
-                <h3>Weapon Tool</h3>
-                <p>Select a weapon from the options below to find out more about it.</p>
-                <select id="weapon-selector">
-      
-                </select>
+      <header>
+        <h1>World of Legends - Dice Rolling System</h1>
+      </header>
+      <main>
+        <hr />
+        <nav class="nav-icons">
+          <ul>
+            <li>
+              <a title="General" href="../index.html"
+                ><i class="fa fa-home" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Weapon Information"
+                aria-selected="true"
+                href="../pages/weapons.html"
+                ><i class="fa fa-solid fa-shield"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Spell Information" href="../pages/spells.html"
+                ><i class="fa fa-solid fa-magic"></i
+              ></a>
+            </li>
+            <li>
+              <a title="Animal Information" href="../pages/animals.html"
+                ><i class="fa fa-bug" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                title="Status and Divine Favour Information"
+                href="../pages/status.html"
+                ><i class="fa fa-superpowers" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+        <div id="info-tabs">
+          <div class="tab" id="weapon-info-wrapper">
+            <h2>Weapon Information</h2>
+            <section id="notes-weapons">
+              <h3>Notes</h3>
+              <ul>
+                <li>
+                  The actual amount of damage a weapon will do depends on the
+                  dice roll. A higher roll will give a higher amount of damage.
+                  The ranges are: 1 = Miss | 2 = Base | 3 = Base + 1 | 4 = Base
+                  + 2 | 5 = Base + 3 | 6 = Base + 4
+                </li>
+                <li>
+                  The Last Barrage and Hot Shot deal a static amount of damage
+                  and therefore do not follow the above system.
+                </li>
+                <li>
+                  All staffs have a base damage of 0, therefore all dice rolls
+                  will output 0. Staffs instead add a buff to spells. The amount
+                  of buff will be listed under the "Buff" stat. Please use the
+                  Spell tool to find out more about spell damage.
+                </li>
+              </ul>
+            </section>
+            <section class="box-tool" id="weapon-tool">
+              <h3>Weapon Tool</h3>
+              <p>
+                Select a weapon from the options below to find out more about
+                it.
+              </p>
+              <select id="weapon-selector"></select>
+              <div id="weapons-certs">
                 <h4>Certificates</h4>
                 <div>
-                  <input type="checkbox" id="melee">
+                  <input type="checkbox" id="melee" />
                   <label>Melee</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="archery">
+                  <input type="checkbox" id="archery" />
                   <label>Archery</label>
                 </div>
                 <div>
-                  <input type="checkbox" id="arcane">
+                  <input type="checkbox" id="arcane" />
                   <label>Arcane</label>
                 </div>
-                <div id="weapon-display">
-                </div>
-                <div id="dice-range">
-                  <h3>Dice Range</h3>
-                  <p>Increasing your rank increases the amount of damage your weapon will do.</p>
-                  <select id="rank"></select>
-                  <div id="dice-range-output"></div>
-                </div>
-              </section>
-            </div>
+              </div>
+              <div id="weapon-display"></div>
+              <div class="box-light" id="dice-range">
+                <h4>Dice Range</h4>
+                <p>
+                  Increasing your rank increases the amount of damage your
+                  weapon will do.
+                </p>
+                <select id="rank"></select>
+                <div id="dice-range-output"></div>
+              </div>
+            </section>
           </div>
-        </main>
-      </div>
-      <script type="module" src="../scripts/weapons/weaponTool.mjs"></script>
-</body>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="../scripts/weapons/weaponTool.mjs"></script>
+  </body>
 </html>

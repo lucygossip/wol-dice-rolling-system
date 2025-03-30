@@ -199,18 +199,6 @@ details {
   margin-bottom: 1rem;
 }
 
-#spells-tool {
-  border: 1px solid var(--font-color-dark);
-  padding: 1rem;
-}
-
-#dice-range {
-  background: #ddd;
-  border-radius: 8px;
-  margin: 1rem 0;
-  padding: 5px 10px;
-}
-
 #dice-range-output {
   width: fit-content;
 }
@@ -222,6 +210,22 @@ details {
 #dice-range-output table th, #dice-range-output table td {
   padding: 3px 1rem;
 }
+
+/* Style Classes */
+.box-light {
+  background: #ddd;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 5px 10px;
+}
+
+.box-tool {
+  border: 1px solid var(--font-color-dark);
+  padding: 1rem;
+}
+
+
+/* Media Queries */
 
 @media screen and (max-width: 650px) {
   .tables-grid {
