@@ -1,4 +1,4 @@
-export const ranks = [
+export const ranks = [  //The number is the amount of extra damage gained per rank
   ["Civilian", 0],
   ["Wanderer", 1],
   ["Journeyman", 2],
