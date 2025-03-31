@@ -17,9 +17,9 @@ const divineSpells = [
     new divineSpell("Tul of Asmundis", 3, "Asmundis", "An Asmundis deer is summoned. In the two turns following, this deer will do an additional 10 damage. This spell can only be cast if you do not currently have an animal summoned.", "This deer will attack for the next 3 turns."),
     new divineSpell("Nature's Salve", 3, "Asmundis", "If the opponent has used an attack that incurs a debuff, the debuff will be removed. If there is more than one debuff, the lowest will be removed. Applies to divine magic. Does not apply to status weapons or armour.", "If there is more than one debuff, all debuffs will be removed."),
     new divineSpell("Slow", 3, "Asmundis", "If the user typically rolls first, they will roll second for this turn.", ""),
-    new divineSpell("Memory Lane", 8, "Asmundis", "This spell can only be cast once per encounter. Returns the duel back to an earlier state (2 rounds prior)", ""),
     new divineSpell("Tul of Airi", 3, "Airi", ""),
-    new divineSpell("Haste", 3, "Airi", "If the user typically rolls second, they will roll first for this turn.", "")
+    new divineSpell("Haste", 3, "Airi", "If the user typically rolls second, they will roll first for this turn.", ""),
+    new divineSpell("(To be named)", 4, "Airi", "Force the opponent to skip a turn. Can be done 3 times per encounter. The caster will automatically roll first for that turn. Their opponent does not get to roll as the caster forces them to skip their turn. In the event of two users casting the spell in the same turn, the turn order remains the same. The first caster gets the turn, and the spell does not activate for the second one."),
 ]
 
 export default divineSpells;
