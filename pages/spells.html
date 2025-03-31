@@ -52,6 +52,51 @@
         </nav>
         <hr />
         <h2>Spell Information</h2>
+        <div id="spells-general">
+          <section id="notes-spells">
+            <h3>Spell Information</h3>
+            <ul>
+              <li>
+                Spell damage is determined by the rank of the spell, not the rank of the user
+              </li>
+              <li>
+                The user's rank determines the chance of success of a spell depending on the spell's rank, e.g. a wanderer has a low chance of succeeding with a legendary spell
+              </li>
+              <li>
+                The outcome is determined by rolling a 1d8. A roll of 1 is always a miss, the rest of the rolls are determined by the chance of success, e.g. A 7/8 chance of success means rolls 2-8 will succeed
+              </li>
+            </ul>
+          </section>
+          <section class="box-tool" id="spells-tool">
+            <h3>Spell Success Tool</h3>
+            <div id="arcane-spell-selectors">
+            <h4>Selectors</h4>
+            <p>
+              Select your rank and the rank of the spell to find out your
+              chance of success.
+            </p>
+            <label>User Rank: </label>
+            <select id="user-rank"></select>
+            <label>Spell Rank: </label>
+            <select id="spell-rank"></select>
+          </div>
+            <!--
+            <h4>Certificates</h4>
+            <div>
+              <input type="checkbox" id="arcane" />
+              <label>Arcane</label>
+            </div>
+            -->  
+            <div class="box-light" id="dice-range">
+              <h4>Dice Range</h4>
+              <p>
+                Depending on your rank and the rank of the spell, the chance
+                of the spell's success will vary.
+              </p>
+              <div id="dice-range-output"></div>
+            </div>
+          </section>
+        </div>
         <nav class="nav-spell-pages">
           <ul>
             <li>
@@ -67,88 +112,18 @@
         </nav>
         <div id="info-tabs">
           <div class="tab" id="arcane-spells-info-wrapper">
-            <section id="notes-arcane-spells">
-              <h3>Arcane Spells</h3>
-              <ul>
-                <li>
-                  Spell damage is determined by the rank of the spell, not the rank of the user
-                </li>
-                <li>
-                  The user's rank determines the chance of success of a spell depending on the spell's rank, e.g. a wanderer has a low chance of succeeding with a legendary spell
-                </li>
-                <li>
-                  The outcome is determined by rolling a 1d8. A roll of 1 is always a miss, the rest of the rolls are determined by the chance of success, e.g. A 7/8 chance of success means rolls 2-8 will succeed
-                </li>
-              </ul>
-            </section>
-            <section class="box-tool" id="spells-tool">
-              <h3>Arcane Spells Tool</h3>
-              <div id="arcane-spell-selectors">
-              <h4>Selectors</h4>
-              <p>
-                Select your rank and the rank of the spell to find out your
-                chance of success.
-              </p>
-              <label>User Rank: </label>
-              <select id="user-rank"></select>
-              <label>Spell Rank: </label>
-              <select id="spell-rank"></select>
-            </div>
-              <!--
-              <h4>Certificates</h4>
-              <div>
-                <input type="checkbox" id="arcane" />
-                <label>Arcane</label>
-              </div>
-              -->  
-              <div class="box-light" id="dice-range">
-                <h4>Dice Range</h4>
-                <p>
-                  Depending on your rank and the rank of the spell, the chance
-                  of the spell's success will vary.
-                </p>
-                <div id="dice-range-output"></div>
-              </div>
-            </section>
             <section>
               <h3>Arcane Spell List</h3>
               <div id="arcane-spell-list-container"></div>
             </section>
           </div>
           <div class="tab" id="divine-spells-info-wrapper" style="display: none">
-            <section id="notes-divine-spells">
-              <h3>Divine Spells</h3>
-              <ul>
-                <li>
-                  Spell damage is determined by the rank of the spell, not the rank of the user
-                </li>
-                <li>
-                  The user's rank determines the chance of success of a spell depending on the spell's rank, e.g. a wanderer has a low chance of succeeding with a legendary spell
-                </li>
-                <li>
-                  The outcome is determined by rolling a 1d8. A roll of 1 is always a miss, the rest of the rolls are determined by the chance of success, e.g. A 7/8 chance of success means rolls 2-8 will succeed
-                </li>
-              </ul>
-            </section>
             <section>
               <h3>Divine Spell List</h3>
               <div id="divine-spell-list-container"></div>
             </section>
           </div>
           <div class="tab" id="dark-spells-info-wrapper" style="display: none">
-              <section id="notes-dark-spells">
-                <h3>Dark Spells</h3>
-                <li>
-                  Spell damage is determined by the rank of the spell, not the rank of the user
-                </li>
-                <li>
-                  The user's rank determines the chance of success of a spell depending on the spell's rank, e.g. a wanderer has a low chance of succeeding with a legendary spell
-                </li>
-                <li>
-                  The outcome is determined by rolling a 1d8. A roll of 1 is always a miss, the rest of the rolls are determined by the chance of success, e.g. A 7/8 chance of success means rolls 2-8 will succeed
-                </li>
-              </ul>
-              </section>
               <section>
                 <h3>Dark Spell List</h3>
                 <div id="dark-spell-list-container"></div>
