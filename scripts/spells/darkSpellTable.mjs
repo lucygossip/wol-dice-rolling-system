@@ -11,7 +11,7 @@ const summaryDark = summarize(
 
 createSpellTable(
   document.getElementById(summaryDark),
-  "divine-spells-table-dark",
+  "dark-spells-table",
   darkSpells,
   arcaneHeaders
 );

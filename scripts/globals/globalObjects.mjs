@@ -18,6 +18,11 @@ export const divineHeaders = [
   "With Divine Certificate"
 ]
 
+export const statusHeaders = [
+  "Name",
+  "Effect"
+]
+
 export const weaponSelector = document.getElementById("weapon-selector");
 
 export const arcaneSpellSelector = document.getElementById("arcane-spell-selector");
@@ -27,6 +32,10 @@ export const arcaneSpellListContainer = document.getElementById("arcane-spell-li
 export const divineSpellListContainer = document.getElementById("divine-spell-list-container");
 
 export const darkSpellListContainer = document.getElementById("dark-spell-list-container");
+
+export const statusListContainer = document.getElementById("status-list-container");
+
+export const divineFavourListContainer = document.getElementById("divine-favour-list-container");
 
 export const weaponDisplay = document.getElementById("weapon-display");
 
