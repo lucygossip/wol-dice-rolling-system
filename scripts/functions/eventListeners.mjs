@@ -1,4 +1,4 @@
-import { diceRangeOutput } from "../globals/globalObjects.mjs";
+import { diceRangeOutput, zeroBaseDamage } from "../globals/globalObjects.mjs";
 import { validateDamage } from "./validationFunctions.mjs";
 import { createDiceTable, createDiceRange, createStaticDiceRange } from "./diceFunctions.mjs";
 import {
