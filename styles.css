@@ -269,7 +269,7 @@ table.spell-table td {
 
 
 .scrollbar-default::-webkit-scrollbar,
-#arcane-spells-info-wrapper details[open]::-webkit-scrollbar
+details[open]::-webkit-scrollbar
 {
   width: 10px;
   height: 10px;
@@ -277,7 +277,7 @@ table.spell-table td {
 }
 
 .scrollbar-default::-webkit-scrollbar-thumb,
-#arcane-spells-info-wrapper details[open]::-webkit-scrollbar-thumb
+details[open]::-webkit-scrollbar-thumb
 {
   background: var(--scrollbar-thumb-color);
   display: block;
@@ -325,7 +325,9 @@ div#arcane-spell-selectors select, div#arcane-spell-selectors label {
     min-width: 200px;
 }
 
-#arcane-spells-info-wrapper details {
+#arcane-spells-info-wrapper details,
+#divine-spells-info-wrapper details,
+#dark-spells-info-wrapper details {
   overflow-x: scroll;
 }
 }
