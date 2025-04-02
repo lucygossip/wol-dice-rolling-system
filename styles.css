@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #334;
   font-family: sans-serif;
@@ -74,6 +78,10 @@ select {
 
 /* Layouts */
 
+div, section {
+  max-width: 100%;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1000px;
@@ -87,6 +95,11 @@ footer {
 
 main {
   background: var(--bg-main);
+}
+
+section {
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 details, li {
@@ -254,4 +267,32 @@ table.spell-table td {
     width: 100%;
     margin-bottom: 2rem;
   }
+
+  /* Typography*/
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  /* Spell Page Modifications */
+
+  div#arcane-spell-selectors select {
+    margin-bottom: 1rem;
+}
+div#arcane-spell-selectors select, div#arcane-spell-selectors label {
+    width: 100%;
+}
+
+  div#dice-range.box-light {
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  table.spell-table tr td:nth-child(4) {
+    min-width: 200px;
+}
+
+#arcane-spells-info-wrapper details {
+  overflow-x: scroll;
+}
 }
