@@ -10,12 +10,20 @@ body {
 }
 
 :root {
-  --bg-main: #b7b9bc;
-  --bg-dark: #1a1a2a;
-  --font-color-accent: #08c;
-  --font-color-dark: #06a;
+  --gray: #b7b9bc;
+  --near-black: #1a1a2a;
+  --mid-blue: #08c;
+  --darker-blue: #06a;
+
+  --bg-main: var(--gray);
+  --bg-dark: var(--near-black);
+  --font-color-accent: var(--mid-blue);
+  --font-color-dark: var(--darker-blue);
   --font-family-accent: "Cinzel";
   --font-family-main: "Georgia";
+
+  --scrollbar-thumb-color: var(--near-black);
+  --scrollbar-track-color: var(--darker-blue);
 }
 
 /* Images - Default */
@@ -255,6 +263,31 @@ table.spell-table td {
 .box-tool {
   border: 1px solid var(--font-color-dark);
   padding: 1rem;
+}
+
+/* Scrollbars */
+
+
+.scrollbar-default::-webkit-scrollbar,
+#arcane-spells-info-wrapper details[open]::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+  background: var(--scrollbar-track-color);
+}
+
+.scrollbar-default::-webkit-scrollbar-thumb,
+#arcane-spells-info-wrapper details[open]::-webkit-scrollbar-thumb
+{
+  background: var(--scrollbar-thumb-color);
+  display: block;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-color)  var(--scrollbar-track-color);
+  }
 }
 
 /* Media Queries */
