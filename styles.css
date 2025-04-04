@@ -15,6 +15,7 @@ body {
   --near-white: #ddd;
   --dark-gray: #222;
   --near-black: #1a1a2a;
+  --purple-black: #111121;
   --black: #001;
   --mid-blue: #08c;
   --darker-blue: #06a;
@@ -25,9 +26,10 @@ body {
   --bg-dark: var(--near-black);
   --bg-table: var(--near-white);
   --bg-box-light: var(--near-white);
+  --bg-box-dark: var(--bg-dark);
   
   --font-color-accent: var(--mid-blue);
-  --font-color-body: #000;
+  --font-color-body: var(--black);
   --font-color-dark: var(--darker-blue);
   --font-color-h2: var(--near-black);
   --font-color-h3: var(--near-black);
@@ -45,15 +47,16 @@ body {
 
 /* Dark mode */
 .dark {
-  --bg-body: var(--black);
+  --bg-body: #000;
   --bg-main: var(--near-black);
   --bg-dark: var(--black);
   --bg-table: var(--dark-blue-purple);
   --bg-box-light: var(--dark-blue-purple);
+  --bg-box-dark: var(--purple-black);
 
   --font-color-accent: var(--mid-blue);
   --font-color-body: var(--light-gray);
-  --font-color-dark: transparent;
+  --font-color-dark: var(--darker-blue);
   --font-color-h2: var(--darker-blue);
   --font-color-h3: var(--darker-blue);
   --font-color-h4: var(--near-white);
@@ -297,7 +300,7 @@ table.spell-table td {
 }
 
 .box-dark {
-  background: var(--bg-dark);
+  background: var(--bg-box-dark);
   color: var(--font-color-accent);
 }
 .box-dark a {

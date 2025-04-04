@@ -5,7 +5,7 @@ const toggleClass = (element, className) => element.classList.toggle(className);
 
 window.addEventListener("load", () => {
   let darkModeStatus = sessionStorage.getItem("darkMode");
-  if(darkModeStatus === "false") {
+  if(darkModeStatus === "false" || !darkModeStatus) {
     darkModeToggle.checked = false;
     body.classList.remove("dark");
   }
