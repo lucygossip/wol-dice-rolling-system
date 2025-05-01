@@ -234,6 +234,7 @@ table.table-default-style {
   background: var(--bg-table);
   border: 1px solid var(--font-color-dark);
   border-collapse: collapse;
+  white-space: pre-line;
 }
 
 table.table-default-style th,
