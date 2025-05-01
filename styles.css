@@ -20,6 +20,8 @@ body {
   --mid-blue: #08c;
   --darker-blue: #06a;
   --dark-blue-purple: #334;
+  --lilac: #aD89aD;
+  --lilac-dark: #6D496D;
 
   --bg-body: var(--dark-blue-purple);
   --bg-main: var(--light-gray);
@@ -28,9 +30,9 @@ body {
   --bg-box-light: var(--near-white);
   --bg-box-dark: var(--bg-dark);
   
-  --font-color-accent: var(--mid-blue);
+  --font-color-accent: var(--lilac);
   --font-color-body: var(--black);
-  --font-color-dark: var(--darker-blue);
+  --font-color-dark: var(--lilac-dark);
   --font-color-h2: var(--near-black);
   --font-color-h3: var(--near-black);
   --font-color-h4: var(--black);
@@ -118,9 +120,9 @@ a {
 
 select {
   background: transparent;
-  border: 2px solid var(--font-color-accent);
+  border: 2px solid var(--font-color-dark);
   border-radius: 5px;
-  color: var(--font-color-accent);
+  color: var(--font-color-dark);
   padding: 5px;
 }
 
