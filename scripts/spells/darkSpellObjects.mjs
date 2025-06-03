@@ -10,7 +10,10 @@ class darkSpell {
   const darkSpells = [
     new darkSpell("Leech", 6, "dark", "A 1d6 is rolled. The value of the dice is removed from the opponent's hp and added to the user's hp."),
     new darkSpell("Curse", 7, "dark", "If the target attempts a healing spell in the next 3 turns, it will automatically fail. Lemuria's Light is immune."),
-    new darkSpell("Phobos Manifestation", 7, "dark", "For every subsequent turn until the hallucination is broken, the chance of a hit is greatly reduced. Additionally, a 1d6 is rolled at the start of each turn to attempt to break the hallucination. (This 1d6 does not receive a debuff.) The hallucination is broken if the user rolls a 6."),
+    new darkSpell("Phobos Manifestation", 7, "dark", `For every subsequent turn until the hallucination is broken, the chance of a hit is greatly reduced.
+      For weapons: Rolls of 1-3 is a miss.
+      For spells: Depending on your rank, usual chance of missing + 2 extra.
+      Additionally, a 1d6 is rolled at the start of each turn to attempt to break the hallucination. (This 1d6 does not receive a debuff) The hallucination is broken if the user rolls a 6.`),
     new darkSpell("Pain Perception", 7, "dark", "The caster pays a toll of 5hp, in exchange for casting 25 damage at the opponent. If the caster misses, they still have to pay this toll."),
     new darkSpell("Black Chain", 7, "dark", "The opponent gets wrapped up in chains, which drains the power of their attacks. This starts at 5hp. If the caster successfully uses this spell in consecutive turns, the drain effect increases by 3 damage per successful turn. If the opponent's attack misses while wrapped up in chains, they lose that amount of HP instead."),
     new darkSpell("Wither", 7, "dark", "This spell behaves like a siphon - Once cast, the caster steals 5hp from the opponent in each subsequent turn."),
