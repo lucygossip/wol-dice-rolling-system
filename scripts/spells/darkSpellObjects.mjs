@@ -20,8 +20,8 @@ class darkSpell {
     new darkSpell("Tenebrous Shroud", 8, "dark", "Turns the environment dark. If successfully casted, Shadow Orb can be used in the next turn."),
     new darkSpell("Shadow Orb", 8, "dark", "The effect of this spell lasts for the duration of the turn in which it is cast. With this effect in play, the caster's second spell becomes 2.5 x more powerful. E.g. A legend spell of 20 damage will output 50 damage."),
     new darkSpell("Cursed Weapon", 8, "dark", "The caster flips a coin. If heads, they exchange 15hp for a one handed war axe with a base damage of 17. Each turn, another coin is flipped. If heads, the caster keeps the weapon and it gains +2 damage (stacking). If tails, the weapon disappears and is reset to its original state."),
-    new darkSpell("(Sacrificial Lamb)", 8, "dark", "The caster pays a toll of 10hp, in exchange for casting 30 damage at the opponent. If the caster misses, they still have to pay this toll."),
-    new darkSpell("(Divine Intervention", 8, "dark", "The effects of the opponent's status weapon are removed for the duration of the turn. Ivella Ro Cinys is immune"),
+    new darkSpell("Sacrificial Lamb", 8, "dark", "The caster pays a toll of 10hp, in exchange for casting 30 damage at the opponent. If the caster misses, they still have to pay this toll."),
+    new darkSpell("Divine Intervention", 8, "dark", "The effects of the opponent's status weapon are removed for the duration of the turn. Ivella Ro Cinys is immune"),
     new darkSpell("Blood Manipulation", 8, "dark", "The caster exchanges 10hp to increase the power of one weapon for the duration of the duel. Note: Staffs are not affected as they do not do physical damage."),
     new darkSpell("Arcane Suppression", 8, "dark", "This spell can only be cast once per encounter. Subsequent attempts will fail. If successfully cast, any spell cast by the opponent is guaranteed to fail in that turn. Over the next 5 turns, the chance of failure will slowly reduce by 1, until it has returned to normal."),
   ];
