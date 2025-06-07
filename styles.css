@@ -10,6 +10,8 @@
   --dark-gray: #47494c;
   --near-white: #ddd;
   --maroon: #550030;
+  --navy: #222439;
+  --pale-blue: #5b6779;
 
   /* Box Main */
   --bg-box-main: var(--light-gray);
@@ -38,8 +40,8 @@
   --font-color-h2: var(--black);
   --font-color-h3: var(--maroon);
   --font-color-h4: var(--dark-gray);
-  --font-color-icon: var(--near-white);
-  --font-color-icon-hover: var(--maroon);
+  --font-color-icon: var(--light-gray);
+  --font-color-icon-hover: var(--white);
   --font-color-anchor: var(--maroon);
   --font-color-th: var(--maroon);
   --font-color-td: var(--black);
