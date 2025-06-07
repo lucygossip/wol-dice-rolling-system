@@ -61,7 +61,7 @@ const divineSpells = [
     3,
     "Asmundis",
     "An Asmundis deer is summoned. In the two turns following, this deer will do an additional 10 damage. This spell can only be cast if you do not currently have an animal summoned.",
-    "This deer will attack for the next 3 turns.",
+    "This deer will attack for the next 2 turns.",
   ),
   new divineSpell(
     "Nature's Salve",
