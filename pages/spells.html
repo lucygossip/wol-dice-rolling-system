@@ -80,14 +80,12 @@
             <select id="user-rank"></select>
             <label>Spell Rank: </label>
             <select id="spell-rank"></select>
-          </div>
-            <!--
+          </div> 
             <h4>Certificates</h4>
             <div>
               <input type="checkbox" id="arcane" />
               <label>Arcane</label>
             </div>
-            -->  
             <div class="box-light scrollbar-default" id="dice-range">
               <h4>Dice Range</h4>
               <p>
@@ -96,6 +94,16 @@
               </p>
               <div id="dice-range-output"></div>
             </div>
+          </section>
+          <section class="box-tool" id="arcane-spell-calculator">
+            <h3>Arcane Spell Calculator</h3>
+            <label>Staff:</label>
+            <select id="arcane-calculator-staff"></select>
+            <label>Arcane Certificate: </label>
+            <input type="checkbox" id="arcane-calculator-certificate">
+            <label>Spell: </label>
+            <select id="arcane-calculator-spell-list"></select>
+            <div id="arcane-calculator-result"></div>
           </section>
         </div>
         <nav class="nav-spell-pages">
@@ -154,6 +162,7 @@
       </div>
       </footer>
     </div>
+    <script type="module" src="../scripts/spells/arcaneSpellCalculator.mjs"></script>
     <script type="module" src="../scripts/spells/spellTool.mjs"></script>
     <script type="module" src="../scripts/spells/arcaneSpellTable.mjs"></script>
     <script type="module" src="../scripts/spells/divineSpellTable.mjs"></script>

@@ -98,7 +98,6 @@ export function createTable(tableId) {
 }
 
 export function getChanceOfSuccess(userRank, spellRank) {
-  console.log(userRank, spellRank);
   let num = 7;
   if (userRank === "Civilian") {
     /* console.log(`User rank: ${userRank} | Chance of success: 0 / 8`); */

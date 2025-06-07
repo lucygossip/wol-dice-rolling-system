@@ -368,6 +368,7 @@ table.spell-table td {
 
 .box-tool {
   border: 1px solid var(--box-tool-border);
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 
