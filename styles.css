@@ -24,6 +24,7 @@
   /* Box Dark */
   --bg-box-dark: var(--black);
   --font-color-box-dark: var(--near-white);
+  --font-color-anchor-box-dark: var(--near-white);
   --font-family-box-dark: "Georgia";
 
   /* General Background */
@@ -40,7 +41,6 @@
   --font-color-icon: var(--near-white);
   --font-color-icon-hover: var(--maroon);
   --font-color-anchor: var(--maroon);
-  --font-color-anchor-box-dark: var(--near-white);
   --font-color-th: var(--maroon);
   --font-color-td: var(--black);
   --font-color-select: var(--black);
@@ -82,6 +82,7 @@
   /* Box Dark */
   --bg-box-dark: var(--darker-gray);
   --font-color-box-dark: var(--near-white);
+  --font-color-anchor-box-dark: var(--near-white);
   --font-family-box-dark: "Georgia";
 
   /* General Background */
@@ -98,7 +99,6 @@
   --font-color-icon: var(--near-white);
   --font-color-icon-hover: var(--maroon);
   --font-color-anchor: var(--maroon);
-  --font-color-anchor-box-dark: var(--near-white);
   --font-color-th: var(--maroon);
   --font-color-td: var(--near-white);
   --font-color-select: var(--black);
