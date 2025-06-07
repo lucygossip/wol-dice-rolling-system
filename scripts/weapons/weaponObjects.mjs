@@ -296,7 +296,7 @@ export const staffs = [
     "https://img.worldofpotter.eu/wol/img/uploads/shop/items/phpZajgY8_601a939aee30f8_12831810.png?version=NDKdLxH1yX&width=350",
     "None",
     "None",
-    2,
+    1,
   ),
   new Staff(
     "Shaman's Staff",
@@ -306,7 +306,7 @@ export const staffs = [
     "https://img.worldofpotter.eu/wol/img/uploads/shop/items/phpOlSsbf_607f304ed66886_78527119.png?version=NDKdLxH1yX&width=350",
     "None",
     "None",
-    1,
+    2,
   ),
   new Staff(
     "The Aspergil",
