@@ -282,6 +282,33 @@ export const statusWeapons = [
     "Water",
     "Rains a shower of arrows that attacks multiple targets (maximum 3). Targets must be specified",
   ),
+  new StatusWeapon(
+    "Magnum",
+    "melee",
+    "One Handed",
+    8,
+    "https://img.worldofpotter.eu/wol/img/uploads/images/a0cae5a5-b91d-429c-9684-5c6173cf5b86.webp?version=j8KoCT2E4p&width=350",
+    "Magma",
+    "Weapon gains +5 magma damage when used in conjunction with a magma spell in the same turn",
+  ),
+  new StatusWeapon(
+    "Blaze Reap",
+    "melee",
+    "One Handed",
+    10,
+    "https://img.worldofpotter.eu/wol/img/uploads/images/592a4cce-ef8b-4326-b2c2-6a6b15fb7132.webp?version=j8KoCT2E4p&width=350",
+    "Dark/Fire",
+    "Plot Effect 1 | Gatekeeper: On the first successful hit of an opponent, Black Chain* is automatically cast upon the bound user until succession is broken. Plot Effect 2 | Ice Breaker: Ice spells cast by the opponent can halt the Black Chain's build for a turn.",
+  ),
+  new StatusWeapon(
+    "Sacrilege",
+    "melee",
+    "Two Handed",
+    16,
+    "https://img.worldofpotter.eu/wol/img/uploads/images/0c682eea-82e0-475d-936f-6b62300aa5ae.webp?version=j8KoCT2E4p&width=350",
+    "Fire",
+    "Prevents the Undead from channelling the Divine Arts",
+  )
 ];
 
 statusWeapons[2].static = true;
