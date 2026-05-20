@@ -36,3 +36,33 @@ export function createSpellTable(container, tableId, spellsArr, headers) {
    });
  }
 }
+
+export function createBasicTable(container, tableId, arr, headers) {
+  const newTable = createTable(tableId);
+  newTable.classList.add("table-default-style", "basic-table");
+  container.appendChild(newTable);
+
+  let tr1 = createTableItem("tr", newTable);
+  for (let i = 0; i < headers.length; i++) {
+    createTableItem("th", tr1, headers[i]);
+  }
+
+  for (let i = 0; i < arr.length; i++) {
+    let tr = createTableItem("tr", newTable);
+
+    Object.entries(arr[i]).forEach(([key, value]) => {
+      const td = createTableItem("td", tr);
+
+      if (key === "img") {
+        const img = document.createElement("img");
+        img.src = value;
+        img.alt = "";
+        img.style.maxWidth = "100px"; // optional sizing
+        img.style.height = "auto";
+        td.appendChild(img);
+      } else {
+        td.textContent = value;
+      }
+    });
+  }
+}

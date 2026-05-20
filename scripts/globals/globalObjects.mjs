@@ -23,6 +23,15 @@ export const statusHeaders = [
   "Effect"
 ]
 
+export const armourHeaders = [
+  "Image",
+  "Name",
+  "Element",
+  "Type",
+  "Defence",
+  "Description"
+]
+
 export const weaponSelector = document.getElementById("weapon-selector");
 
 export const arcaneSpellSelector = document.getElementById("arcane-spell-selector");
